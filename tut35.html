@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        header::before {
+            content: " ";
+            background: url('https://www.ukgbc.org/wp-content/uploads/2019/04/Cover-ANZ-Framework-920x540.jpg');
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        :root {
+            --primary-color: mediumorchid;
+            --secondary-color: red;
+            --tertiary-color: green;
+            --max-width: 800px;
+        }
+
+        .container {
+            display: flex;
+            background-color: var(--tertiary-color);
+            width: var(--max-width);
+            height: 600px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            margin: 3px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </header>
+    </header>
+</body>
+
+</html>

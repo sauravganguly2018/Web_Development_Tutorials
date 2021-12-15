@@ -1,0 +1,53 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul
+        div#logo
+          img(src="../static/dc2.png", alt="logo") 
+          | SDA
+        li #[a(href="/") Home ] 
+        li #[a(href="/about") About ] 
+        li #[a(href="/services") Services]  
+        li #[a(href="/classinfo") ClassInfo] 
+        li #[a(href="/contact") ContactUs] 
+    
+    
+    section#introsection 
+       div Welcome to Saurav's Dance Academy 
+       div.small Eat Sleep Dance Repeat
+    section#missionsection
+      h2 Our Mission   
+      div.card 
+        h3 Dance Perfection
+        div.imag 
+          img(src="../static/dc5.png", alt="image")
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae laudantium soluta ut dolorum ad temporibus!
+      div.card 
+        h3 Dance the way you like
+        div.imag 
+          img(src="../static/dc3.png", alt="image")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fuga, dolores eaque ut corporis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, sunt?
+      div.card 
+        h3 Expert Teaching
+        div.imag 
+          img(src="../static/dc4.png", alt="image")
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel delectus sunt sed impedit natus corrupti.
+    section#sponsorssection
+      h2 Our Sponsors 
+      div#sponsors 
+       img(src="../static/logo3.png",alt="sponsors image")
+       img(src="../static/logo4.png", alt="sponsors image")
+       img(src="../static/logo2.png", alt="sponsors image")
+       img(src="../static/logo5.png", alt="sponsors image")
+       img(src="../static/logo9.png",  alt="sponsors image")
+
+    footer#footer 
+      | Copyright &copy 2021 SauravDanceAcademy.com | All rights reserved
+
+    script
+      include ../static/script.js

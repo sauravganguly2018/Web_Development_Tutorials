@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    background-color: darkorange;
+    font-weight: bolder;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#logo{
+display:flex;
+align-items: center;
+color:white;
+font-size: 22px;
+margin: 5px 20px;
+margin-right: 40px;
+}
+
+#logo img{
+    height: 43px;
+    /* filter:invert(1); */
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding:13px 30px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+}
+
+#introsection{
+    padding-bottom:150px;
+height:400px;
+background-color: orange;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color:red;
+font-size: 50px;
+background: center/cover no-repeat url('./static/bg.jpg');
+}
+
+#missionsection{
+    height: 310px;
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+#missionsection h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top:15px;
+}
+
+.card{
+    display:inline-block;
+    border:2px solid black;
+    border-radius: 5px;
+    width:30%;
+    margin:0px 16px;
+    height:209px;
+}
+
+.imag{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.imag p{
+    margin:0px 15px;
+    text-align: justify;
+}
+
+.imag img{
+    height: 150px;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.small{
+    font-size: 40px;
+    padding:6px;
+}
+
+#sponsorssection{
+height:300px;
+background-color:sandybrown;
+}
+
+h2{
+    font-size:30px;
+    text-align: center;
+    padding:20px;
+}
+
+#sponsors{
+    padding-top: 25px;
+    height:200px;
+    width:83%;
+    margin:auto;
+}
+
+#sponsors img{
+    margin:0px 30px;
+    height:150px
+}
+
+#footer{
+height:30px;
+color:white;
+background-color:black;
+text-align: center;
+font-size: 22px;
+}

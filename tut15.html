@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* belows are the css comment  */
+        /* Element selector */
+        p {
+            border: 5px solid red;
+        }
+
+        /* Class selector */
+        .kundan {
+            color: palegreen;
+            background-color: purple;
+        }
+
+        /* Id selector */
+        #saurav {
+            color: chartreuse;
+        }
+
+        /* Grouping selector */
+        span,
+        footer {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS SELECTORS</h3>
+    <!-- ids are given more preference than class in terms of fetching the content -->
+    <P id="saurav" class="kundan">This is my paragraph</P>
+    <p class="kundan">This is another paragraph</p>
+    <div>
+        <p>This is yet another paragraph</p>
+    </div>
+    <span>This is span</span>
+    <footer>This is footer</footer>
+</body>
+
+</html>

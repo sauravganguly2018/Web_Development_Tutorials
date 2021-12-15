@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | strings and string methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SAURAV GANGULY</h1>
+        <div id="content"></div>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quasi quas placeat aspernatur nostrum
+            sapiente consectetur. Error sequi deserunt fugiat dicta animi nobis possimus, natus praesentium dolore
+            itaque ad exercitationem quibusdam quam, ab est pariatur odio provident esse officia cum quidem. Sequi
+            ducimus optio illo voluptas consequuntur perspiciatis cum dicta?</P>
+    </div>
+    <script>
+        // var string='saurav';
+        var string = 'thi"ss';
+        var name = 'saurav';
+        var channel = 'code with saurav';
+        var message = 'saurav is a good boy';
+        var temp = `${name} is a nice person''' "" "" and he has channel name called ${channel} `;
+        console.log(string + name + channel);
+        console.log(temp);
+        var len = name.length;
+        console.log(`The length of name is ${len} `)
+        console.log('Harry \\n is a \ngood \t boy \b');
+
+        var y = new String('this');
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>This is my h3 heading  </h3>';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>fill your forms and submit</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myrole" id="role">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+        <label for="date">Date </label>
+        <div>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <label for="bonus">Bonus </label>
+        <div>
+            <input type="number" name="mybonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible : <input type="checkbox" name="myeligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other <input
+                type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            <label for="my employee">Employee </label>
+            <select name="employee" id="my employee">
+                <option value="sau" selected>saurav ganguly</option>
+                <option value="gun">gunjan kumar</option>
+                <option value="kun">kundan kumar</option>
+            </select>
+        </div>
+        <br>
+        <label for="text"> Write about yourself :</label>
+        <div>
+            <textarea name="mytext" cols="30" rows="10" id="text"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>

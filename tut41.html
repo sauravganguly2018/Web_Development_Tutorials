@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 2fr 1fr 3fr;
+            /* grid-auto-rows:400px; */
+            grid-auto-rows: 2fr;
+            /* grid-template-columns: 2fr 4fr; */
+            grid-template-columns: repeat(3, 2fr);
+            grid-gap: 30px
+        }
+
+        .box {
+            background-color: violet;
+            margin: 5px;
+            padding: 10px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">this is Ganguly-1</div>
+        <div class="box">this is Ganguly-2</div>
+        <div class="box">this is Ganguly-3</div>
+        <div class="box">this is Ganguly-4</div>
+        <div class="box">this is Ganguly-5</div>
+        <div class="box">this is Ganguly-6</div>
+        <div class="box">this is Ganguly-7</div>
+        <div class="box">this is Ganguly-8</div>
+        <div class="box">this is Ganguly-9</div>
+        <div class="box">this is Ganguly-10</div>
+    </div>
+</body>
+
+</html>

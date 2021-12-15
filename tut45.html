@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid+media-queries</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'saurav saurav saurav saurav'
+                'kundan kundan kundan gunjan'
+                'shivam shivam shivam shivam';
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        .box2 {
+            font-size: 2rem;
+        }
+
+        .item {
+            background-color: bisque;
+            border: 3px solid black;
+            padding: 5px;
+        }
+
+        #navbar {
+            grid-area: saurav;
+        }
+
+        #section {
+            grid-area: kundan;
+        }
+
+        #box {
+            grid-area: gunjan;
+        }
+
+        footer {
+            grid-area: shivam;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'saurav saurav saurav saurav'
+                    'kundan kundan kundan kundan'
+                    'shivam shivam shivam shivam';
+            }
+
+            #box {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width: 500px) {
+            body {
+                background-color: blue;
+            }
+
+            #box {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                              'Open Sans',
+ 'Helvetica Neue', sans-serif;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .box2 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item" id="navbar">
+            <h1>This is first block</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed ad eligendi tempora eos magnam et,
+            dolores eius amet harum repellendus porro. In fugiat quaerat natus eius asperiores repellendus corporis.
+        </nav>
+        <section class="item" id="section">
+            <h1>This is second block</h1>
+            <div class="box2">
+                <span>s</span>
+                <span>a</span>
+                <span>u</span>
+                <span>r</span>
+                <span>a</span>
+                <span>v</span>
+            </div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet nam ipsam aliquid veniam provident
+            quisquam officia sed, ducimus repudiandae, beatae qui ad modi, distinctio dolores quo saepe totam magnam
+            dolorum?
+        </section>
+        <div class="item" id="box">
+            <h1>This is third block</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ducimus reiciendis error quae iure
+            laudantium facere ipsa ut cumque consectetur eos enim tenetur, quia hic sit obcaecati deleniti molestiae
+            quas molestias a? Laudantium modi iure accusantium, quasi magnam tempore quis.
+        </div>
+        <footer class="item">
+            <h1>This is fourth block</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quibusdam, ducimus nobis consectetur commodi
+            voluptate quae minima, laborum recusandae error id dignissimos provident ratione inventore eius, suscipit
+            repellat tempore eligendi cum. Ut aperiam fugit, porro, ipsa minus tempore neque doloremque saepe nesciunt
+            consequatur soluta quam quibusdam dolor itaque harum suscipit?
+        </footer>
+    </div>
+</body>
+
+</html>
+

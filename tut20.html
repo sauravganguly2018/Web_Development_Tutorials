@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+
+        /* following  is  an universol selector */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /*margin and padding will remain 0 untill we overwrite below*/
+        }
+
+        .container {
+            background-color: burlywood;
+            /*
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;*/
+            /* we can also set margin/padding for top right bottom left as follow */
+            padding: 30px 40px 50px 60px;
+            /* padding/margin= top right bottom left*/
+            padding: 100px 10px;
+            /*padding/margin=y(top bottom)  x(left right) */
+            border: solid 5px chartreuse;
+            margin: 25px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem a ut, perferendis minima in
+            praesentium eos deleniti odit ipsa tenetur maiores vel earum molestiae ea tempore necessitatibus accusantium
+            aspernatur recusandae omnis nulla! Voluptas ad deleniti atque rerum nesciunt? Architecto, ullam?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem a ut, perferendis minima in
+            praesentium eos deleniti odit ipsa tenetur maiores vel earum molestiae ea tempore necessitatibus accusantium
+            aspernatur recusandae omnis nulla! Voluptas ad deleniti atque rerum nesciunt? Architecto, ullam?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem a ut, perferendis minima in
+            praesentium eos deleniti odit ipsa tenetur maiores vel earum molestiae ea tempore necessitatibus accusantium
+            aspernatur recusandae omnis nulla! Voluptas ad deleniti atque rerum nesciunt? Architecto, ullam?</p>
+    </div>
+</body>
+
+</html>

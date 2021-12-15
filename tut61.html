@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        This is Math Object Tutorial
+    </div>
+
+    <script>
+        //Printing the Math Object
+       let m=Math;
+        console.log(m);
+
+        //Printing the constants of Math Object
+        console.log('The value of Math.E is '+Math.E);
+        console.log('The value of Math.LN2 is '+Math.LN2);
+        console.log('The value of Math.LOG2E is '+Math.LOG2E);
+        console.log('The value of Math.PI is '+Math.PI);
+        console.log('The value of Math.SQRT2 is '+Math.SQRT2);
+
+     //Printing the Functions of Math Object
+     let a=25.89364;
+     let b=67.4256778;
+
+     console.log('The Value of a and b is ',a,b);
+     console.log('The Value of a and b after rounded is ',Math.round(a),Math.round(b));
+
+     console.log('3 raised to the power 4 is ', Math.pow(3,4));
+     console.log('1 raised to the power 78 is ', Math.pow(1,78));
+     console.log('9999 raised to the power 0 is ' ,Math.pow(9999,0));
+
+    console.log('The squareroot of 36 is ',Math.sqrt(36));
+    console.log('The squareroot of  81 is ',Math.sqrt(81));
+    console.log('The squareroot of 199 is ',Math.sqrt(199));
+
+    // ceil and floor
+    console.log('10.378 rounded upto nearest integer is ',Math.ceil(10.378));
+    console.log('10.345 rounded down to nearest integer is ',Math.floor(10.345));
+
+    //Abs Function
+    console.log('The absolute value of 4.39 is ',Math.abs(4.39));
+    console.log('The absolute value of -4.39 is ',Math.abs(-4.39));
+
+    //Trigonometric Functions
+    console.log('The value of sin(PI) is ',Math.sin(Math.PI));
+    console.log('The value of sin(PI/2) is ',Math.sin(Math.PI/2));
+    console.log('The value of tan(PI/2) is ',Math.tan(Math.PI/2));
+    console.log('The value of cos(PI/3) is ',Math.cos(Math.PI/3));
+    console.log('The value of cos(0) is ',Math.cos(0));
+
+    //Min and Max Functions
+    console.log('Minimum value of 3,8,-1,-4 is ',Math.min(3,8,-1,-4));
+    console.log('Maximum value of 3,8,-1,-4 is ',Math.max(3,8,-1,-4));
+
+    //Generating a random no.
+    let r=Math.random();
+    let c=20;
+    let d=40;
+    let r20_40=c+(d-c)*Math.random();
+    console.log('The default random no. is ',r);
+    console.log('The random no. between 20 and 40 is ',r20_40);
+
+    </script>
+</body>
+</html>

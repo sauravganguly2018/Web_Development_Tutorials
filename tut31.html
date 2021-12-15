@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: burlywood;
+            text-align: center;
+            border-radius: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* if p is contained by any li which is contained by div */
+        /* div li p{
+         background-color: gold;
+         color: black;
+         border-radius: 3px;
+     } */
+
+        /* this is just like p is son and div is his father   */
+        /* div > p{
+         background-color: gold;
+         color: black;
+         border-radius: 3px;
+     } */
+
+        /* this is just like p and div both are brother and p must be just forward to div  */
+        div+p {
+            background-color: gold;
+            color: black;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph inside li</p>
+                </li>
+                <li>this paragraph will not get affected</li>
+                <p>This is a paragraph inside ul</p>
+            </ul>
+            <p>This is a Paragraph</p>
+        </div>
+        <p>This is another Paragraph</p>
+    </div>
+    <p>This is outermost Paragraph</p>
+</body>
+
+</html>

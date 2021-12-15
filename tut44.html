@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'box section section section'
+                'footer footer footer footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #box {
+            grid-area: box;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .item {
+            background-color: darkgrey;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique vel voluptate
+            sunt aperiam facere, consectetur expedita, ea commodi doloremque asperiores quo obcaecati ullam eligendi
+            optio praesentium debitis a quidem eaque!</div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam mollitia
+            illo id, aliquid quo expedita quaerat blanditiis! Ex illum minus nisi dolorem ratione nihil ducimus
+            voluptatum, ab consequatur quos consectetur,Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            architecto eos sunt rem veritatis id vitae pariatur dolor voluptates vel quae reiciendis labore soluta earum
+            suscipit vero nostrum cum. Odit a repudiandae Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nihil expedita ut distinctio excepturi sint soluta eligendi inventore, deserunt voluptatibus accusamus
+            officia dicta ab delectus dolore quis ex libero adipisci iusto natus qui assumenda a? Asperiores nobis
+            pariatur laboriosam temporibus repellendus veniam, beatae ea ipsum unde aliquid porro ut repudiandae vel!
+            consequuntur praesentium distinctio perspiciatis fugiat impedit sint nihil optio? Inventore, reiciendis?
+            Magnam, soluta quibusdam iure earum quidem non nobis ratione quasi est magni, id perspiciatis. Iste eos quod
+            repellendus recusandae. quo minima magnam fugit error iste at necessitatibus inventore.</div>
+        <div id="box" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quod soluta laborum
+            vitae at? Minima voluptatem optio eum? Repudiandae sit earum nulla, id, laudantium assumenda eligendi dolor
+            quas doloribus quibusdam debitis labore, cupiditate ut tenetur. Voluptas ab facere culpa consequuntur.</div>
+        <footer class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, beatae nulla architecto
+            atque sapiente consequuntur, tempore quibusdam quo aut explicabo ipsum ut similique, provident deleniti odio
+            ducimus nobis! Adipisci praesentium dolor ullam porro? Voluptates quaerat reiciendis blanditiis mollitia
+            officia. A iure obcaecati hic aliquid ratione possimus nesciunt quos cum illum.</footer>
+        <!-- <div class="item">saurav ganguly-1</div>
+        <div class="item">saurav ganguly-2</div>
+        <div class="item">saurav ganguly-3</div>
+        <div class="item">saurav ganguly-4</div>
+        <div class="item">saurav ganguly-5</div>
+        <div class="item">saurav ganguly-6</div>
+        <div class="item">saurav ganguly-7</div>
+        <div class="item">saurav ganguly-8</div>
+        <div class="item">saurav ganguly-9</div>
+        <div class="item">saurav ganguly-10</div>
+        <div class="item">saurav ganguly-11</div>
+        <div class="item">saurav ganguly-12</div>
+        <div class="item">saurav ganguly-13</div>
+        <div class="item">saurav ganguly-14</div>
+        <div class="item">saurav ganguly-15</div> -->
+    </div>
+</body>
+
+</html>

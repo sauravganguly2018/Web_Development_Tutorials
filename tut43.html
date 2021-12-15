@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* minmax me max ke 1fr hone pe column min tak jati hai */
+            /* grid-template-columns:repeat(auto-fit,minmax(200px,400px)); */
+            /* but minmax me max ke 400px hone pe column 400px tak jati hai */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 5px;
+
+        }
+
+        .box {
+            background-color: bisque;
+            border: 3px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">saurav ganguly-1</div>
+        <div class="box">saurav ganguly-2</div>
+        <div class="box">saurav ganguly-3</div>
+        <div class="box">saurav ganguly-4</div>
+        <div class="box">saurav ganguly-5</div>
+        <div class="box">saurav ganguly-6</div>
+        <div class="box">saurav ganguly-7</div>
+        <div class="box">saurav ganguly-8</div>
+        <div class="box">saurav ganguly-9</div>
+        <div class="box">saurav ganguly-10</div>
+    </div>
+</body>
+
+</html>

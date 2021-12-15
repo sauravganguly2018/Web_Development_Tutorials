@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: solid 3px black;
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+            display: inline-block;
+        }
+
+        /* relative: position the element relative to its normal position and will leave a gap at its 
+        normal position */
+        /* position: relative; */
+
+        /* absolute: position the eement relative to the position of the first parent and will not 
+        leave any gap of it's normal position */
+        /* position:absolute; */
+
+        /* fixed: position the element relative to the browser window  and will not leave any 
+        gap of it's normal position    */
+        /* position: fixed; */
+
+        /* sticky: position the element relative to it's normal positon ,only from top and will
+         leave a gap at it's normal poaition */
+
+        /*  excluding sticky top: 45px;
+                                    left: 40px */
+
+        #box3 {
+            position: sticky;
+            top: 5px;
+        }
+
+        #box2 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: green;
+        }
+
+        .container {
+            width: 99%;
+            border: solid 5px red;
+            background-color: darkseagreen;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">hello</div>
+        <div class="box" id="box2">chat with me</div>
+        <div class="box" id="box3">gunjan</div>
+        <div class="box" id="box4">kundan</div>
+    </div>
+</body>
+
+</html>

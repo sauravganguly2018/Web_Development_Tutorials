@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 20px;
+            /* display block means we can convert inline element to block in order to set margin: auto */
+            display: block;
+            margin: auto;
+        }
+
+        header {
+            border: 3px solid red;
+            width: 100%;
+            margin: 10px 0px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            border: solid 4px purple;
+            padding: 10px;
+            margin: 5px;
+            background-color: yellowgreen;
+            display: inline-block;
+            width: 32%;
+        }
+
+        .box {
+            border: solid 5px greenyellow;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
+        <h2>welcome to saurav ganguly's blog</h2>
+    </header>
+    <div class="box">
+        <div class="container">
+            <h3>ganguly</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quas nam omnis tenetur repudiandae illo
+                quaerat rerum minima autem! Quibusdam quod quas architecto fugit reprehenderit sed in? Assumenda
+                consectetur ipsa impedit repellat tenetur id!</p>
+        </div>
+        <div class="container">
+            <h3>gunjan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quas nam omnis tenetur repudiandae illo
+                quaerat rerum minima autem! Quibusdam quod quas architecto fugit reprehenderit sed in? Assumenda
+                consectetur ipsa impedit repellat tenetur id!</p>
+        </div>
+        <div class="container">
+            <h3>kundan</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quas nam omnis tenetur repudiandae illo
+                quaerat rerum minima autem! Quibusdam quod quas architecto fugit reprehenderit sed in? Assumenda
+                consectetur ipsa impedit repellat tenetur id!</p>
+        </div>
+    </div>
+</body>
+
+</html>

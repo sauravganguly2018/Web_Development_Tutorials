@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container {
+            border: 5px solid red;
+            display: grid;
+            /* grid-template-columns: 300px 100px 200px; */
+            /* grid-template-columns:300px auto 200px; */
+            /* grid-template-columns: 1fr 5fr 10fr;  */
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 33px;
+        }
+
+        .item {
+            background-color: black;
+            color: white;
+            padding: 40px;
+            margin: 10px;
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">this is saurav1</div>
+        <div class="item">this is saurav2</div>
+        <div class="item">this is saurav3</div>
+        <div class="item">this is saurav4</div>
+        <div class="item">this is saurav5</div>
+        <div class="item">this is saurav6</div>
+        <div class="item">this is saurav7</div>
+        <div class="item">this is saurav8</div>
+        <div class="item">this is saurav9</div>
+        <div class="item">this is saurav10</div>
+    </div>
+</body>
+
+</html>

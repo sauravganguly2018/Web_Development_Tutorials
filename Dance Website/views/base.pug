@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title My Site Saurav Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar 
+      ul
+        div#logo
+          img(src="../static/dc2.png", alt="logo") 
+          | SDA
+        li #[a(href="/") Home ] 
+        li #[a(href="/about") About ] 
+        li #[a(href="/services") Services]  
+        li #[a(href="/classinfo") ClassInfo] 
+        li #[a(href="/contact") ContactUs] 
+    block content
+    footer#footer 
+      | Copyright &copy 2021 SauravDanceAcademy.com | All rights reserved 
+    
+      

@@ -1,0 +1,28 @@
+#container{
+  width:45%;
+  margin:auto;
+  height: 542px;;
+}
+h1{
+    text-align: center;
+}
+.frm{
+    display:flex;
+    flex-direction: column;
+}
+.inp{
+    padding:10px;
+    margin:10px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+#btn{
+    background-color: green;
+    padding:7px;
+    width:110px;
+    display:block;
+    border-radius: 5px;
+    color:white;
+    outline: none;
+    margin: 20px auto;
+}
